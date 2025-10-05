@@ -1,0 +1,65 @@
+[0.000000] (-) TimerEvent: {}
+[0.000316] (carrinho_sdf_pkg) JobQueued: {'identifier': 'carrinho_sdf_pkg', 'dependencies': OrderedDict()}
+[0.000446] (carrinho_sdf_pkg) JobStarted: {'identifier': 'carrinho_sdf_pkg'}
+[0.098520] (-) TimerEvent: {}
+[0.198990] (-) TimerEvent: {}
+[0.299380] (-) TimerEvent: {}
+[0.399763] (-) TimerEvent: {}
+[0.500235] (-) TimerEvent: {}
+[0.600880] (-) TimerEvent: {}
+[0.701550] (-) TimerEvent: {}
+[0.802029] (-) TimerEvent: {}
+[0.902400] (-) TimerEvent: {}
+[1.002797] (-) TimerEvent: {}
+[1.103264] (-) TimerEvent: {}
+[1.203649] (-) TimerEvent: {}
+[1.304038] (-) TimerEvent: {}
+[1.404508] (-) TimerEvent: {}
+[1.505064] (-) TimerEvent: {}
+[1.605563] (-) TimerEvent: {}
+[1.705961] (-) TimerEvent: {}
+[1.806539] (-) TimerEvent: {}
+[1.907142] (-) TimerEvent: {}
+[2.007689] (-) TimerEvent: {}
+[2.011435] (carrinho_sdf_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/larissa/ws_gazebo/build/carrinho_sdf_pkg/build', '--no-deps', 'symlink_data'], 'cwd': '/home/larissa/ws_gazebo/build/carrinho_sdf_pkg', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LANGUAGE': 'en_AU:en', 'USER': 'larissa', 'LC_TIME': 'pt_BR.UTF-8', 'SSH_AGENT_PID': '2069', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/larissa', 'OLDPWD': '/home/larissa/ws_gazebo', 'LESS': '-R', 'DESKTOP_SESSION': 'ubuntu', 'NVM_BIN': '/home/larissa/.nvm/versions/node/v16.17.0/bin', 'ZSH': '/home/larissa/.oh-my-zsh', 'LSCOLORS': 'Gxfxcxdxbxegedabagacad', 'NVM_INC': '/home/larissa/.nvm/versions/node/v16.17.0/include/node', 'GTK_MODULES': 'gail:atk-bridge', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'PAGER': 'less', 'ROS_PYTHON_VERSION': '3', 'MANAGERPID': '1971', 'LC_CTYPE': 'pt_BR.UTF-8', 'LC_MONETARY': 'pt_BR.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'NVM_DIR': '/home/larissa/.nvm', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'foxy', 'COLCON_PREFIX_PATH': '/home/larissa/ws_gazebo/install', 'LOGNAME': 'larissa', '_': '/usr/bin/colcon', 'JOURNAL_STREAM': '8:42966', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'USERNAME': 'larissa', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/usr/share/gazebo-11/models:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/foxy/bin:/home/larissa/.yarn/bin:/home/larissa/.config/yarn/global/node_modules/.bin:/home/larissa/.nvm/versions/node/v16.17.0/bin:/opt/apache-maven-3.8.7/bin:/opt/pgsql/bin:/opt/pgsql/bin:/usr/lib/ccache:/home/larissa/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/larissa/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/larissa-desktop:@/tmp/.ICE-unix/2106,unix/larissa-desktop:/tmp/.ICE-unix/2106', 'PAPERSIZE': 'a4', 'INVOCATION_ID': 'da9a6fd8bbf045c284050624d1c2058b', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/4d4494cf_82e0_41f0_9ad4_c490b8e6158f', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LC_ADDRESS': 'pt_BR.UTF-8', 'DISPLAY': ':0', 'LANG': 'en_AU.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'pt_BR.UTF-8', 'XDG_SESSION_DESKTOP': 'ubuntu', 'GNOME_TERMINAL_SERVICE': ':1.117', 'XMODIFIERS': '@im=ibus', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/foxy', 'SHELL': '/usr/bin/zsh', 'LC_NAME': 'pt_BR.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LC_MEASUREMENT': 'pt_BR.UTF-8', 'LC_IDENTIFICATION': 'pt_BR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'GAZEBO_RESOURCE_PATH': '/usr/share/gazebo-11:', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/larissa/ws_gazebo/build/carrinho_sdf_pkg', 'JAVA_HOME': '/usr/lib/jvm/java-17-openjdk-amd64', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'NVM_CD_FLAGS': '-q', 'GAZEBO_PLUGIN_PATH': '/opt/ros/foxy/lib:/opt/ros/foxy/lib:/opt/ros/foxy/lib:/opt/ros/foxy/lib:', 'LC_NUMERIC': 'pt_BR.UTF-8', 'PYTHONPATH': '/home/larissa/ws_gazebo/build/carrinho_sdf_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/larissa/ws_gazebo/install/carrinho_sdf_pkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_PAPER': 'pt_BR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003'}, 'shell': False}
+[2.107879] (-) TimerEvent: {}
+[2.208317] (-) TimerEvent: {}
+[2.308690] (-) TimerEvent: {}
+[2.409052] (-) TimerEvent: {}
+[2.410171] (carrinho_sdf_pkg) StdoutLine: {'line': b'running develop\n'}
+[2.509171] (-) TimerEvent: {}
+[2.609605] (-) TimerEvent: {}
+[2.691143] (carrinho_sdf_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[2.691529] (carrinho_sdf_pkg) StdoutLine: {'line': b'creating carrinho_sdf_pkg.egg-info\n'}
+[2.691839] (carrinho_sdf_pkg) StdoutLine: {'line': b'writing carrinho_sdf_pkg.egg-info/PKG-INFO\n'}
+[2.692159] (carrinho_sdf_pkg) StdoutLine: {'line': b'writing dependency_links to carrinho_sdf_pkg.egg-info/dependency_links.txt\n'}
+[2.692497] (carrinho_sdf_pkg) StdoutLine: {'line': b'writing requirements to carrinho_sdf_pkg.egg-info/requires.txt\n'}
+[2.692718] (carrinho_sdf_pkg) StdoutLine: {'line': b'writing top-level names to carrinho_sdf_pkg.egg-info/top_level.txt\n'}
+[2.709752] (-) TimerEvent: {}
+[2.729147] (carrinho_sdf_pkg) StdoutLine: {'line': b"writing manifest file 'carrinho_sdf_pkg.egg-info/SOURCES.txt'\n"}
+[2.785379] (carrinho_sdf_pkg) StdoutLine: {'line': b"reading manifest file 'carrinho_sdf_pkg.egg-info/SOURCES.txt'\n"}
+[2.786296] (carrinho_sdf_pkg) StdoutLine: {'line': b"writing manifest file 'carrinho_sdf_pkg.egg-info/SOURCES.txt'\n"}
+[2.809869] (-) TimerEvent: {}
+[2.859638] (carrinho_sdf_pkg) StdoutLine: {'line': b'running build_ext\n'}
+[2.879650] (carrinho_sdf_pkg) StdoutLine: {'line': b'Creating /home/larissa/ws_gazebo/install/carrinho_sdf_pkg/lib/python3.8/site-packages/site.py\n'}
+[2.882935] (carrinho_sdf_pkg) StdoutLine: {'line': b'Creating /home/larissa/ws_gazebo/install/carrinho_sdf_pkg/lib/python3.8/site-packages/carrinho-sdf-pkg.egg-link (link to .)\n'}
+[2.884118] (carrinho_sdf_pkg) StdoutLine: {'line': b'\n'}
+[2.884334] (carrinho_sdf_pkg) StdoutLine: {'line': b'Installed /home/larissa/ws_gazebo/build/carrinho_sdf_pkg\n'}
+[2.884557] (carrinho_sdf_pkg) StdoutLine: {'line': b'running symlink_data\n'}
+[2.884847] (carrinho_sdf_pkg) StdoutLine: {'line': b'creating /home/larissa/ws_gazebo/install/carrinho_sdf_pkg/share/ament_index\n'}
+[2.885104] (carrinho_sdf_pkg) StdoutLine: {'line': b'creating /home/larissa/ws_gazebo/install/carrinho_sdf_pkg/share/ament_index/resource_index\n'}
+[2.885336] (carrinho_sdf_pkg) StdoutLine: {'line': b'creating /home/larissa/ws_gazebo/install/carrinho_sdf_pkg/share/ament_index/resource_index/packages\n'}
+[2.885598] (carrinho_sdf_pkg) StdoutLine: {'line': b'symbolically linking /home/larissa/ws_gazebo/build/carrinho_sdf_pkg/resource/carrinho_sdf_pkg -> /home/larissa/ws_gazebo/install/carrinho_sdf_pkg/share/ament_index/resource_index/packages\n'}
+[2.885864] (carrinho_sdf_pkg) StdoutLine: {'line': b'symbolically linking /home/larissa/ws_gazebo/build/carrinho_sdf_pkg/package.xml -> /home/larissa/ws_gazebo/install/carrinho_sdf_pkg/share/carrinho_sdf_pkg\n'}
+[2.886124] (carrinho_sdf_pkg) StdoutLine: {'line': b'creating /home/larissa/ws_gazebo/install/carrinho_sdf_pkg/share/carrinho_sdf_pkg/launch\n'}
+[2.886334] (carrinho_sdf_pkg) StdoutLine: {'line': b'symbolically linking /home/larissa/ws_gazebo/build/carrinho_sdf_pkg/launch/sim.launch.py -> /home/larissa/ws_gazebo/install/carrinho_sdf_pkg/share/carrinho_sdf_pkg/launch\n'}
+[2.886528] (carrinho_sdf_pkg) StdoutLine: {'line': b'creating /home/larissa/ws_gazebo/install/carrinho_sdf_pkg/share/carrinho_sdf_pkg/worlds\n'}
+[2.886717] (carrinho_sdf_pkg) StdoutLine: {'line': b'symbolically linking /home/larissa/ws_gazebo/build/carrinho_sdf_pkg/worlds/meu_mundo.world -> /home/larissa/ws_gazebo/install/carrinho_sdf_pkg/share/carrinho_sdf_pkg/worlds\n'}
+[2.886905] (carrinho_sdf_pkg) StdoutLine: {'line': b'creating /home/larissa/ws_gazebo/install/carrinho_sdf_pkg/share/carrinho_sdf_pkg/models\n'}
+[2.887095] (carrinho_sdf_pkg) StdoutLine: {'line': b'creating /home/larissa/ws_gazebo/install/carrinho_sdf_pkg/share/carrinho_sdf_pkg/models/carrinho_sdf\n'}
+[2.887285] (carrinho_sdf_pkg) StdoutLine: {'line': b'symbolically linking /home/larissa/ws_gazebo/build/carrinho_sdf_pkg/models/carrinho_sdf/model.sdf -> /home/larissa/ws_gazebo/install/carrinho_sdf_pkg/share/carrinho_sdf_pkg/models/carrinho_sdf\n'}
+[2.887498] (carrinho_sdf_pkg) StdoutLine: {'line': b'symbolically linking /home/larissa/ws_gazebo/build/carrinho_sdf_pkg/models/carrinho_sdf/model.config -> /home/larissa/ws_gazebo/install/carrinho_sdf_pkg/share/carrinho_sdf_pkg/models/carrinho_sdf\n'}
+[2.910033] (-) TimerEvent: {}
+[2.938174] (carrinho_sdf_pkg) CommandEnded: {'returncode': 0}
+[2.961083] (carrinho_sdf_pkg) JobEnded: {'identifier': 'carrinho_sdf_pkg', 'rc': 0}
+[2.962557] (-) EventReactorShutdown: {}

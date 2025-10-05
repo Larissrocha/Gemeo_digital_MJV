@@ -1,0 +1,10 @@
+Metadata-Version: 1.2
+Name: carrinho-sdf-pkg
+Version: 0.0.1
+Summary: Spawn de robô SDF no Gazebo (ROS 2 Foxy)
+Home-page: UNKNOWN
+Maintainer: Larissa
+Maintainer-email: larissa@example.com
+License: Apache-2.0
+Description: UNKNOWN
+Platform: UNKNOWN

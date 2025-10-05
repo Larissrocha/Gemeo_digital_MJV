@@ -1,0 +1,31 @@
+[2.014s] Invoking command in '/home/larissa/ws_gazebo/build/carrinho_sdf_pkg': PYTHONPATH=/home/larissa/ws_gazebo/build/carrinho_sdf_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/larissa/ws_gazebo/install/carrinho_sdf_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/larissa/ws_gazebo/build/carrinho_sdf_pkg/build --no-deps symlink_data
+[2.410s] running develop
+[2.691s] running egg_info
+[2.691s] creating carrinho_sdf_pkg.egg-info
+[2.692s] writing carrinho_sdf_pkg.egg-info/PKG-INFO
+[2.692s] writing dependency_links to carrinho_sdf_pkg.egg-info/dependency_links.txt
+[2.692s] writing requirements to carrinho_sdf_pkg.egg-info/requires.txt
+[2.692s] writing top-level names to carrinho_sdf_pkg.egg-info/top_level.txt
+[2.729s] writing manifest file 'carrinho_sdf_pkg.egg-info/SOURCES.txt'
+[2.785s] reading manifest file 'carrinho_sdf_pkg.egg-info/SOURCES.txt'
+[2.786s] writing manifest file 'carrinho_sdf_pkg.egg-info/SOURCES.txt'
+[2.859s] running build_ext
+[2.879s] Creating /home/larissa/ws_gazebo/install/carrinho_sdf_pkg/lib/python3.8/site-packages/site.py
+[2.883s] Creating /home/larissa/ws_gazebo/install/carrinho_sdf_pkg/lib/python3.8/site-packages/carrinho-sdf-pkg.egg-link (link to .)
+[2.884s] 
+[2.884s] Installed /home/larissa/ws_gazebo/build/carrinho_sdf_pkg
+[2.884s] running symlink_data
+[2.885s] creating /home/larissa/ws_gazebo/install/carrinho_sdf_pkg/share/ament_index
+[2.885s] creating /home/larissa/ws_gazebo/install/carrinho_sdf_pkg/share/ament_index/resource_index
+[2.885s] creating /home/larissa/ws_gazebo/install/carrinho_sdf_pkg/share/ament_index/resource_index/packages
+[2.885s] symbolically linking /home/larissa/ws_gazebo/build/carrinho_sdf_pkg/resource/carrinho_sdf_pkg -> /home/larissa/ws_gazebo/install/carrinho_sdf_pkg/share/ament_index/resource_index/packages
+[2.886s] symbolically linking /home/larissa/ws_gazebo/build/carrinho_sdf_pkg/package.xml -> /home/larissa/ws_gazebo/install/carrinho_sdf_pkg/share/carrinho_sdf_pkg
+[2.886s] creating /home/larissa/ws_gazebo/install/carrinho_sdf_pkg/share/carrinho_sdf_pkg/launch
+[2.886s] symbolically linking /home/larissa/ws_gazebo/build/carrinho_sdf_pkg/launch/sim.launch.py -> /home/larissa/ws_gazebo/install/carrinho_sdf_pkg/share/carrinho_sdf_pkg/launch
+[2.886s] creating /home/larissa/ws_gazebo/install/carrinho_sdf_pkg/share/carrinho_sdf_pkg/worlds
+[2.886s] symbolically linking /home/larissa/ws_gazebo/build/carrinho_sdf_pkg/worlds/meu_mundo.world -> /home/larissa/ws_gazebo/install/carrinho_sdf_pkg/share/carrinho_sdf_pkg/worlds
+[2.887s] creating /home/larissa/ws_gazebo/install/carrinho_sdf_pkg/share/carrinho_sdf_pkg/models
+[2.887s] creating /home/larissa/ws_gazebo/install/carrinho_sdf_pkg/share/carrinho_sdf_pkg/models/carrinho_sdf
+[2.887s] symbolically linking /home/larissa/ws_gazebo/build/carrinho_sdf_pkg/models/carrinho_sdf/model.sdf -> /home/larissa/ws_gazebo/install/carrinho_sdf_pkg/share/carrinho_sdf_pkg/models/carrinho_sdf
+[2.887s] symbolically linking /home/larissa/ws_gazebo/build/carrinho_sdf_pkg/models/carrinho_sdf/model.config -> /home/larissa/ws_gazebo/install/carrinho_sdf_pkg/share/carrinho_sdf_pkg/models/carrinho_sdf
+[2.939s] Invoked command in '/home/larissa/ws_gazebo/build/carrinho_sdf_pkg' returned '0': PYTHONPATH=/home/larissa/ws_gazebo/build/carrinho_sdf_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/larissa/ws_gazebo/install/carrinho_sdf_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/larissa/ws_gazebo/build/carrinho_sdf_pkg/build --no-deps symlink_data
