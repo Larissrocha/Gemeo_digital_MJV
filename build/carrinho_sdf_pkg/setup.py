@@ -1,1 +1,0 @@
-/home/larissa/ws_gazebo/src/carrinho_sdf_pkg/setup.py

@@ -1,4 +1,5 @@
-from setuptools import setup
+#from setuptools import setup
+packages=find_packages(),
 import os
 package_name = 'carrinho_sdf_pkg'
 setup(
@@ -17,7 +18,6 @@ setup(
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='Larissa',
-    maintainer_email='larissa@example.com',
-    description='Spawn de robô SDF no Gazebo (ROS 2 Foxy)',
+    description='Spawn de robô SDF no Gazebo (ROS 2 Humble / Ignition)',
     license='Apache-2.0',
 )

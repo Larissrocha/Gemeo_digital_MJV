@@ -2,17 +2,15 @@
 <package format="3">
   <name>carrinho_sdf_pkg</name>
   <version>0.0.1</version>
-  <description>Spawn de robô SDF no Gazebo (ROS 2 Foxy)</description>
+  <description>Spawn de robô SDF no Gazebo (ROS 2 Humble / Ignition)</description>
   <maintainer email="larissa@example.com">Larissa</maintainer>
   <license>Apache-2.0</license>
 
   <buildtool_depend>ament_python</buildtool_depend>
 
-  <exec_depend>gazebo_ros</exec_depend>
   <exec_depend>launch</exec_depend>
   <exec_depend>launch_ros</exec_depend>
-
-  <export>
-    <build_type>ament_python</build_type>
-  </export>
+  <!-- Bridges e spawner do Ignition -->
+  <exec_depend>ros_ign_bridge</exec_depend>
+  <exec_depend>ros_ign_gazebo</exec_depend>
 </package>

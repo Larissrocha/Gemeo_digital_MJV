@@ -1,1 +1,0 @@
-/home/larissa/ws_gazebo/build/carrinho_sdf_pkg/launch/sim.launch.py

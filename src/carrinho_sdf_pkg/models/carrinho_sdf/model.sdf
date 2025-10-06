@@ -23,16 +23,20 @@
         <geometry><box><size>2.0 1.0 0.5</size></box></geometry>
       </collision>
 
-      <!-- IMU (ROS) -->
+      <!-- IMU -->
       <sensor name="imu_sensor" type="imu">
         <always_on>1</always_on>
         <update_rate>50</update_rate>
         <visualize>false</visualize>
+        <!-- IGNITION: publica diretamente neste tópico -->
+        <topic>/imu</topic>
+        <!-- GAZEBO CLASSIC (comentado; mantido sem remover) 
         <plugin name="imu_ros" filename="libgazebo_ros_imu_sensor.so">
           <ros><namespace>/</namespace></ros>
           <frame_name>base_link</frame_name>
           <topic>imu</topic>
         </plugin>
+        -->
       </sensor>
     </link>
 
@@ -53,7 +57,7 @@
         <geometry><cylinder><radius>0.24</radius><length>0.24</length></cylinder></geometry>
       </collision>
 
-      <!-- Laser (ROS) -->
+      <!-- Laser -->
       <sensor name="lidar" type="ray">
         <update_rate>10</update_rate>
         <ray>
@@ -79,12 +83,16 @@
         </ray>
         <always_on>1</always_on>
         <visualize>false</visualize>
+        <!-- IGNITION: publica diretamente neste tópico -->
+        <topic>/scan</topic>
+        <!-- GAZEBO CLASSIC (comentado; mantido sem remover)
         <plugin name="lidar_ros" filename="libgazebo_ros_ray_sensor.so">
           <ros><namespace>/</namespace></ros>
           <frame_name>lidar_link</frame_name>
           <output_type>sensor_msgs/LaserScan</output_type>
           <topic>scan</topic>
         </plugin>
+        -->
       </sensor>
     </link>
 
@@ -111,6 +119,9 @@
           <image><width>800</width><height>800</height><format>R8G8B8</format></image>
           <clip><near>0.02</near><far>300</far></clip>
         </camera>
+        <!-- IGNITION: publica diretamente neste tópico -->
+        <topic>/camera/image_raw</topic>
+        <!-- GAZEBO CLASSIC (comentado; mantido sem remover)
         <plugin name="camera_ros" filename="libgazebo_ros_camera.so">
           <ros><namespace>/</namespace></ros>
           <camera_name>camera</camera_name>
@@ -118,6 +129,7 @@
           <image_topic_name>camera/image_raw</image_topic_name>
           <camera_info_topic_name>camera/camera_info</camera_info_topic_name>
         </plugin>
+        -->
       </sensor>
     </link>
 
@@ -182,7 +194,7 @@
     <!-- Rodinha traseira (caster) -->
     <link name="caster">
       <pose>0.8 0 -0.2 0 0 0</pose>
-      <inertial><mass>1</mass><inertia><ixx>0.016</ixx><iyy>0.016</iyy><izz>0.016</izz></inertia></inertial>
+      <inertial><mass>1</mass><inertia><ixx>0.016</ixx><iyy>0.016</iyy><izz>0.016</izz></inertial>
       <visual name="visual">
         <geometry><sphere><radius>0.2</radius></sphere></geometry>
         <material><diffuse>0 1 0 1</diffuse></material>
@@ -196,7 +208,19 @@
       <child>caster</child>
     </joint>
 
-    <!-- Diff drive (ROS) -->
+    <!-- Diff drive -->
+    <!-- IGNITION: plugin nativo -->
+    <plugin filename="libignition-gazebo-diff-drive-system.so" name="ignition::gazebo::systems::DiffDrive">
+      <left_joint>junta_roda_esquerda</left_joint>
+      <right_joint>junta_roda_direita</right_joint>
+      <wheel_separation>1.2</wheel_separation>
+      <wheel_radius>0.4</wheel_radius>
+      <odom_publish_frequency>10</odom_publish_frequency>
+      <topic>/cmd_vel</topic>
+      <odom_topic>/odom</odom_topic>
+    </plugin>
+
+    <!-- GAZEBO CLASSIC (comentado; mantido sem remover)
     <plugin filename="libgazebo_ros_diff_drive.so" name="diff_drive">
       <ros><namespace>/</namespace></ros>
       <left_joint>junta_roda_esquerda</left_joint>
@@ -211,5 +235,6 @@
       <publish_odom>true</publish_odom>
       <publish_tf>true</publish_tf>
     </plugin>
+    -->
   </model>
 </sdf>
