@@ -17,51 +17,50 @@ def generate_launch_description():
 
     # Spawna o modelo SDF (Ignition)
     spawn = Node(
-        package='ros_ign_gazebo',
+        package='ros_gz_sim',
         executable='create',
         arguments=['-name', 'vehicle_blue', '-file', model, '-x', '0', '-y', '0', '-z', '0.30'],
         output='screen'
     )
 
     # Bridges ROS2 <-> Ignition
-    # (se sua distro usa ros_gz_bridge, troque 'ros_ign_bridge' por 'ros_gz_bridge')
     bridge_cmd_vel = Node(
-        package='ros_ign_bridge',
+        package='ros_gz_bridge',
         executable='parameter_bridge',
         arguments=['/cmd_vel@geometry_msgs/msg/Twist@ignition.msgs.Twist'],
         output='screen'
     )
 
     bridge_odom = Node(
-        package='ros_ign_bridge',
+        package='ros_gz_bridge',
         executable='parameter_bridge',
         arguments=['/odom@nav_msgs/msg/Odometry@ignition.msgs.Odometry'],
         output='screen'
     )
 
     bridge_lidar = Node(
-        package='ros_ign_bridge',
+        package='ros_gz_bridge',
         executable='parameter_bridge',
         arguments=['/scan@sensor_msgs/msg/LaserScan@ignition.msgs.LaserScan'],
         output='screen'
     )
 
     bridge_camera = Node(
-        package='ros_ign_bridge',
+        package='ros_gz_bridge',
         executable='parameter_bridge',
         arguments=['/camera/image_raw@sensor_msgs/msg/Image@ignition.msgs.Image'],
         output='screen'
     )
 
     bridge_imu = Node(
-        package='ros_ign_bridge',
+        package='ros_gz_bridge',
         executable='parameter_bridge',
         arguments=['/imu@sensor_msgs/msg/Imu@ignition.msgs.IMU'],
         output='screen'
     )
 
     bridge_clock = Node(
-        package='ros_ign_bridge',
+        package='ros_gz_bridge',
         executable='parameter_bridge',
         arguments=['/clock@rosgraph_msgs/msg/Clock@ignition.msgs.Clock'],
         output='screen'
@@ -69,7 +68,7 @@ def generate_launch_description():
 
     # TF do modelo (opcional mas útil para RViz)
     bridge_tf = Node(
-        package='ros_ign_bridge',
+        package='ros_gz_bridge',
         executable='parameter_bridge',
         arguments=['/model/vehicle_blue/tf@tf2_msgs/msg/TFMessage@ignition.msgs.Pose_V'],
         remappings=[('/model/vehicle_blue/tf', '/tf')],
@@ -77,7 +76,7 @@ def generate_launch_description():
     )
 
     bridge_tf_static = Node(
-        package='ros_ign_bridge',
+        package='ros_gz_bridge',
         executable='parameter_bridge',
         arguments=['/model/vehicle_blue/tf_static@tf2_msgs/msg/TFMessage@ignition.msgs.Pose_V'],
         remappings=[('/model/vehicle_blue/tf_static', '/tf_static')],

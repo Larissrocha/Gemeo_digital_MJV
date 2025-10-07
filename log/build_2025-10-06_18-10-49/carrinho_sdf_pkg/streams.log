@@ -1,4 +1,0 @@
-[0.030s] Invoking command in '/home/vboxuser/Gemeo_digital_MJV/build/carrinho_sdf_pkg': /usr/bin/cmake /home/vboxuser/Gemeo_digital_MJV/src/carrinho_sdf_pkg -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/vboxuser/Gemeo_digital_MJV/install/carrinho_sdf_pkg
-[0.043s] [0mCMake Error: The source directory "/home/vboxuser/Gemeo_digital_MJV/src/carrinho_sdf_pkg" does not appear to contain CMakeLists.txt.
-[0.044s] Specify --help for usage, or press the help button on the CMake GUI.[0m
-[0.048s] Invoked command in '/home/vboxuser/Gemeo_digital_MJV/build/carrinho_sdf_pkg' returned '1': /usr/bin/cmake /home/vboxuser/Gemeo_digital_MJV/src/carrinho_sdf_pkg -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/vboxuser/Gemeo_digital_MJV/install/carrinho_sdf_pkg

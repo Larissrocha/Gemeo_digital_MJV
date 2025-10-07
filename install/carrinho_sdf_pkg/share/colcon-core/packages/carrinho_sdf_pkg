@@ -1,1 +1,1 @@
-launch:launch_ros:ros_ign_bridge:ros_ign_gazebo
+launch:launch_ros:ros_gz_bridge:ros_gz_sim

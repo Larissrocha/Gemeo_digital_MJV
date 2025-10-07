@@ -1,0 +1,28 @@
+running develop
+running egg_info
+creating carrinho_sdf_pkg.egg-info
+writing carrinho_sdf_pkg.egg-info/PKG-INFO
+writing dependency_links to carrinho_sdf_pkg.egg-info/dependency_links.txt
+writing requirements to carrinho_sdf_pkg.egg-info/requires.txt
+writing top-level names to carrinho_sdf_pkg.egg-info/top_level.txt
+writing manifest file 'carrinho_sdf_pkg.egg-info/SOURCES.txt'
+reading manifest file 'carrinho_sdf_pkg.egg-info/SOURCES.txt'
+writing manifest file 'carrinho_sdf_pkg.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/vboxuser/Gemeo_digital_MJV/install/carrinho_sdf_pkg/lib/python3.10/site-packages/carrinho-sdf-pkg.egg-link (link to .)
+
+Installed /home/vboxuser/Gemeo_digital_MJV/build/carrinho_sdf_pkg
+running symlink_data
+creating /home/vboxuser/Gemeo_digital_MJV/install/carrinho_sdf_pkg/share/ament_index
+creating /home/vboxuser/Gemeo_digital_MJV/install/carrinho_sdf_pkg/share/ament_index/resource_index
+creating /home/vboxuser/Gemeo_digital_MJV/install/carrinho_sdf_pkg/share/ament_index/resource_index/packages
+symbolically linking /home/vboxuser/Gemeo_digital_MJV/build/carrinho_sdf_pkg/resource/carrinho_sdf_pkg -> /home/vboxuser/Gemeo_digital_MJV/install/carrinho_sdf_pkg/share/ament_index/resource_index/packages
+symbolically linking /home/vboxuser/Gemeo_digital_MJV/build/carrinho_sdf_pkg/package.xml -> /home/vboxuser/Gemeo_digital_MJV/install/carrinho_sdf_pkg/share/carrinho_sdf_pkg
+creating /home/vboxuser/Gemeo_digital_MJV/install/carrinho_sdf_pkg/share/carrinho_sdf_pkg/launch
+symbolically linking /home/vboxuser/Gemeo_digital_MJV/build/carrinho_sdf_pkg/launch/sim.launch.py -> /home/vboxuser/Gemeo_digital_MJV/install/carrinho_sdf_pkg/share/carrinho_sdf_pkg/launch
+creating /home/vboxuser/Gemeo_digital_MJV/install/carrinho_sdf_pkg/share/carrinho_sdf_pkg/worlds
+symbolically linking /home/vboxuser/Gemeo_digital_MJV/build/carrinho_sdf_pkg/worlds/meu_mundo.world -> /home/vboxuser/Gemeo_digital_MJV/install/carrinho_sdf_pkg/share/carrinho_sdf_pkg/worlds
+creating /home/vboxuser/Gemeo_digital_MJV/install/carrinho_sdf_pkg/share/carrinho_sdf_pkg/models
+creating /home/vboxuser/Gemeo_digital_MJV/install/carrinho_sdf_pkg/share/carrinho_sdf_pkg/models/carrinho_sdf
+symbolically linking /home/vboxuser/Gemeo_digital_MJV/build/carrinho_sdf_pkg/models/carrinho_sdf/model.sdf -> /home/vboxuser/Gemeo_digital_MJV/install/carrinho_sdf_pkg/share/carrinho_sdf_pkg/models/carrinho_sdf
+symbolically linking /home/vboxuser/Gemeo_digital_MJV/build/carrinho_sdf_pkg/models/carrinho_sdf/model.config -> /home/vboxuser/Gemeo_digital_MJV/install/carrinho_sdf_pkg/share/carrinho_sdf_pkg/models/carrinho_sdf

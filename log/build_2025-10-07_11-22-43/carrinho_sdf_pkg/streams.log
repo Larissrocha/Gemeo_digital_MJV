@@ -1,0 +1,30 @@
+[1.292s] Invoking command in '/home/vboxuser/Gemeo_digital_MJV/build/carrinho_sdf_pkg': PYTHONPATH=/home/vboxuser/Gemeo_digital_MJV/build/carrinho_sdf_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vboxuser/Gemeo_digital_MJV/install/carrinho_sdf_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/vboxuser/Gemeo_digital_MJV/build/carrinho_sdf_pkg/build --no-deps symlink_data
+[1.733s] running develop
+[1.895s] running egg_info
+[1.902s] creating carrinho_sdf_pkg.egg-info
+[1.902s] writing carrinho_sdf_pkg.egg-info/PKG-INFO
+[1.902s] writing dependency_links to carrinho_sdf_pkg.egg-info/dependency_links.txt
+[1.902s] writing requirements to carrinho_sdf_pkg.egg-info/requires.txt
+[1.902s] writing top-level names to carrinho_sdf_pkg.egg-info/top_level.txt
+[1.902s] writing manifest file 'carrinho_sdf_pkg.egg-info/SOURCES.txt'
+[1.908s] reading manifest file 'carrinho_sdf_pkg.egg-info/SOURCES.txt'
+[1.908s] writing manifest file 'carrinho_sdf_pkg.egg-info/SOURCES.txt'
+[1.910s] running build_ext
+[1.910s] Creating /home/vboxuser/Gemeo_digital_MJV/install/carrinho_sdf_pkg/lib/python3.10/site-packages/carrinho-sdf-pkg.egg-link (link to .)
+[1.917s] 
+[1.917s] Installed /home/vboxuser/Gemeo_digital_MJV/build/carrinho_sdf_pkg
+[1.917s] running symlink_data
+[1.917s] creating /home/vboxuser/Gemeo_digital_MJV/install/carrinho_sdf_pkg/share/ament_index
+[1.917s] creating /home/vboxuser/Gemeo_digital_MJV/install/carrinho_sdf_pkg/share/ament_index/resource_index
+[1.918s] creating /home/vboxuser/Gemeo_digital_MJV/install/carrinho_sdf_pkg/share/ament_index/resource_index/packages
+[1.918s] symbolically linking /home/vboxuser/Gemeo_digital_MJV/build/carrinho_sdf_pkg/resource/carrinho_sdf_pkg -> /home/vboxuser/Gemeo_digital_MJV/install/carrinho_sdf_pkg/share/ament_index/resource_index/packages
+[1.918s] symbolically linking /home/vboxuser/Gemeo_digital_MJV/build/carrinho_sdf_pkg/package.xml -> /home/vboxuser/Gemeo_digital_MJV/install/carrinho_sdf_pkg/share/carrinho_sdf_pkg
+[1.918s] creating /home/vboxuser/Gemeo_digital_MJV/install/carrinho_sdf_pkg/share/carrinho_sdf_pkg/launch
+[1.918s] symbolically linking /home/vboxuser/Gemeo_digital_MJV/build/carrinho_sdf_pkg/launch/sim.launch.py -> /home/vboxuser/Gemeo_digital_MJV/install/carrinho_sdf_pkg/share/carrinho_sdf_pkg/launch
+[1.918s] creating /home/vboxuser/Gemeo_digital_MJV/install/carrinho_sdf_pkg/share/carrinho_sdf_pkg/worlds
+[1.920s] symbolically linking /home/vboxuser/Gemeo_digital_MJV/build/carrinho_sdf_pkg/worlds/meu_mundo.world -> /home/vboxuser/Gemeo_digital_MJV/install/carrinho_sdf_pkg/share/carrinho_sdf_pkg/worlds
+[1.920s] creating /home/vboxuser/Gemeo_digital_MJV/install/carrinho_sdf_pkg/share/carrinho_sdf_pkg/models
+[1.920s] creating /home/vboxuser/Gemeo_digital_MJV/install/carrinho_sdf_pkg/share/carrinho_sdf_pkg/models/carrinho_sdf
+[1.920s] symbolically linking /home/vboxuser/Gemeo_digital_MJV/build/carrinho_sdf_pkg/models/carrinho_sdf/model.sdf -> /home/vboxuser/Gemeo_digital_MJV/install/carrinho_sdf_pkg/share/carrinho_sdf_pkg/models/carrinho_sdf
+[1.920s] symbolically linking /home/vboxuser/Gemeo_digital_MJV/build/carrinho_sdf_pkg/models/carrinho_sdf/model.config -> /home/vboxuser/Gemeo_digital_MJV/install/carrinho_sdf_pkg/share/carrinho_sdf_pkg/models/carrinho_sdf
+[1.961s] Invoked command in '/home/vboxuser/Gemeo_digital_MJV/build/carrinho_sdf_pkg' returned '0': PYTHONPATH=/home/vboxuser/Gemeo_digital_MJV/build/carrinho_sdf_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vboxuser/Gemeo_digital_MJV/install/carrinho_sdf_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/vboxuser/Gemeo_digital_MJV/build/carrinho_sdf_pkg/build --no-deps symlink_data
