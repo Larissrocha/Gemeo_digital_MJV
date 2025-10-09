@@ -9,21 +9,20 @@ def generate_launch_description():
     world = os.path.join(pkg, 'worlds', 'meu_mundo.world')
     model = os.path.join(pkg, 'models', 'carrinho_sdf', 'model.sdf')
 
-    # Abre o Ignition com o mundo
     ign = ExecuteProcess(
         cmd=['ign', 'gazebo', world, '--verbose'],
         output='screen'
     )
 
-    # Spawna o modelo SDF (Ignition)
+    # Spawna o modelo SDF 
     spawn = Node(
         package='ros_gz_sim',
         executable='create',
         arguments=['-name', 'vehicle_blue', '-file', model, '-x', '0', '-y', '0', '-z', '0.30'],
         output='screen'
     )
-
-    # Bridges ROS2 <-> Ignition
+    spawn = TimerAction(period=4.0, actions=[spawn_node])
+    # Bridges
     bridge_cmd_vel = Node(
         package='ros_gz_bridge',
         executable='parameter_bridge',
@@ -66,7 +65,7 @@ def generate_launch_description():
         output='screen'
     )
 
-    # TF do modelo (opcional mas útil para RViz)
+    # TF do modelo 
     bridge_tf = Node(
         package='ros_gz_bridge',
         executable='parameter_bridge',

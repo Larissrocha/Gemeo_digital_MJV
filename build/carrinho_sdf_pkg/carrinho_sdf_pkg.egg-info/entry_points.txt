@@ -1,0 +1,3 @@
+[console_scripts]
+mover_carrinho = carrinho_sdf_pkg.mover_carrinho:main
+

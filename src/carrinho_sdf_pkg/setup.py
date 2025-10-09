@@ -1,11 +1,10 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 import os
 package_name = 'carrinho_sdf_pkg'
-
 setup(
     name=package_name,
     version='0.0.1',
-    packages=find_packages(),
+    packages=[package_name],
     data_files=[
         (os.path.join('share','ament_index','resource_index','packages'),
          ['resource/'+package_name]),
@@ -21,4 +20,9 @@ setup(
     maintainer_email='larissa@example.com',
     description='Spawn de robô SDF no Gazebo (ROS 2 Humble / Ignition)',
     license='Apache-2.0',
+    entry_points={
+        'console_scripts': [
+            'mover_carrinho = carrinho_sdf_pkg.mover_carrinho:main',
+        ],
+    },
 )
