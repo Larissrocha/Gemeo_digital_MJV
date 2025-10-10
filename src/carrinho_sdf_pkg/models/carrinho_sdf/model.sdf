@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <sdf version="1.7">
-  <model name="vehicle_blue">
+  <model name="carrinho_sdf">
     <!-- Chassi -->
     <link name="base_link">
       <pose>0.5 0 0.4 0 0 0</pose>

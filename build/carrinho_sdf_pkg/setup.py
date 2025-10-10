@@ -1,1 +1,0 @@
-/home/vboxuser/Gemeo_digital_MJV/src/carrinho_sdf_pkg/setup.py

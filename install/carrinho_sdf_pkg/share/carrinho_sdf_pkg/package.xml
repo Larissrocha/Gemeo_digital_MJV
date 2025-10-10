@@ -1,1 +1,20 @@
-/home/vboxuser/Gemeo_digital_MJV/build/carrinho_sdf_pkg/package.xml
+<?xml version="1.0"?>
+<package format="3">
+  <name>carrinho_sdf_pkg</name>
+  <version>0.0.1</version>
+  <description>Spawn de robô SDF no Gazebo (ROS 2 Humble / Ignition)</description>
+  <maintainer email="larissa@example.com">Larissa</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>ros_gz_sim</exec_depend>
+  <exec_depend>ros_gz_bridge</exec_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
+
