@@ -1,0 +1,23 @@
+[0.922s] Invoking command in '/home/larissa/Gemeo_digital_MJV/build/carrinho_sdf_pkg': PYTHONPATH=/home/larissa/Gemeo_digital_MJV/build/carrinho_sdf_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/larissa/Gemeo_digital_MJV/install/carrinho_sdf_pkg/lib/python3.10/site-packages: /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/larissa/Gemeo_digital_MJV/build/carrinho_sdf_pkg/build --no-deps symlink_data --force
+[1.245s] running develop
+[1.324s] running egg_info
+[1.329s] writing carrinho_sdf_pkg.egg-info/PKG-INFO
+[1.329s] writing dependency_links to carrinho_sdf_pkg.egg-info/dependency_links.txt
+[1.330s] writing entry points to carrinho_sdf_pkg.egg-info/entry_points.txt
+[1.331s] writing requirements to carrinho_sdf_pkg.egg-info/requires.txt
+[1.331s] writing top-level names to carrinho_sdf_pkg.egg-info/top_level.txt
+[1.335s] reading manifest file 'carrinho_sdf_pkg.egg-info/SOURCES.txt'
+[1.336s] writing manifest file 'carrinho_sdf_pkg.egg-info/SOURCES.txt'
+[1.339s] running build_ext
+[1.339s] Creating /home/larissa/Gemeo_digital_MJV/install/carrinho_sdf_pkg/lib/python3.10/site-packages/carrinho-sdf-pkg.egg-link (link to .)
+[1.339s] Installing mover_carrinho script to /home/larissa/Gemeo_digital_MJV/install/carrinho_sdf_pkg/lib/carrinho_sdf_pkg
+[1.339s] 
+[1.339s] Installed /home/larissa/Gemeo_digital_MJV/build/carrinho_sdf_pkg
+[1.339s] running symlink_data
+[1.344s] symbolically linking /home/larissa/Gemeo_digital_MJV/build/carrinho_sdf_pkg/resource/carrinho_sdf_pkg -> /home/larissa/Gemeo_digital_MJV/install/carrinho_sdf_pkg/share/ament_index/resource_index/packages
+[1.344s] symbolically linking /home/larissa/Gemeo_digital_MJV/build/carrinho_sdf_pkg/package.xml -> /home/larissa/Gemeo_digital_MJV/install/carrinho_sdf_pkg/share/carrinho_sdf_pkg
+[1.344s] symbolically linking /home/larissa/Gemeo_digital_MJV/build/carrinho_sdf_pkg/launch/sim.launch.py -> /home/larissa/Gemeo_digital_MJV/install/carrinho_sdf_pkg/share/carrinho_sdf_pkg/launch
+[1.344s] symbolically linking /home/larissa/Gemeo_digital_MJV/build/carrinho_sdf_pkg/worlds/meu_mundo.world -> /home/larissa/Gemeo_digital_MJV/install/carrinho_sdf_pkg/share/carrinho_sdf_pkg/worlds
+[1.344s] symbolically linking /home/larissa/Gemeo_digital_MJV/build/carrinho_sdf_pkg/models/carrinho_sdf/model.sdf -> /home/larissa/Gemeo_digital_MJV/install/carrinho_sdf_pkg/share/carrinho_sdf_pkg/models/carrinho_sdf
+[1.345s] symbolically linking /home/larissa/Gemeo_digital_MJV/build/carrinho_sdf_pkg/models/carrinho_sdf/model.config -> /home/larissa/Gemeo_digital_MJV/install/carrinho_sdf_pkg/share/carrinho_sdf_pkg/models/carrinho_sdf
+[1.372s] Invoked command in '/home/larissa/Gemeo_digital_MJV/build/carrinho_sdf_pkg' returned '0': PYTHONPATH=/home/larissa/Gemeo_digital_MJV/build/carrinho_sdf_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/larissa/Gemeo_digital_MJV/install/carrinho_sdf_pkg/lib/python3.10/site-packages: /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/larissa/Gemeo_digital_MJV/build/carrinho_sdf_pkg/build --no-deps symlink_data --force

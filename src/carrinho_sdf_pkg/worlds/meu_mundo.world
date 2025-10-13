@@ -26,7 +26,7 @@
 
     <!-- Inclui seu robô pelo caminho de arquivo -->
     <include>
-      <uri>file:///home/vboxuser/Gemeo_digital_MJV/src/carrinho_sdf_pkg/models/carrinho_sdf/model.sdf</uri>
+      <uri>file:///home/larissa/Gemeo_digital_MJV/src/carrinho_sdf_pkg/models/carrinho_sdf/model.sdf</uri>
       <name>carrinho_sdf</name>
       <pose>0 0 0.6 0 0 0</pose>
     </include>
