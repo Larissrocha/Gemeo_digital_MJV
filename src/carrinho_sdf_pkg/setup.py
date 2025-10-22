@@ -13,12 +13,10 @@ setup(
         (os.path.join('share', package_name, 'worlds'), ['worlds/meu_mundo.world']),
         (os.path.join('share', package_name, 'models', 'carrinho_sdf'),
          ['models/carrinho_sdf/model.sdf','models/carrinho_sdf/model.config']),
+        ('lib/' + package_name, ['scripts/mover_carrinho.py']),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='Larissa',
-    maintainer_email='larissa@example.com',
-    description='Spawn de robô SDF no Gazebo (ROS 2 Humble / Ignition)',
     license='Apache-2.0',
     entry_points={
         'console_scripts': [
@@ -26,3 +24,5 @@ setup(
         ],
     },
 )
+
+

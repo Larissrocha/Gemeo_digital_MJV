@@ -16,7 +16,6 @@
         <geometry>
           <mesh>
             <uri>file:///home/larissa/Gemeo_digital_MJV/src/carrinho_sdf_pkg/models/carrinho_sdf/meshes/Chassi.STL</uri>
-            <!-- escala 1: STL em metros; use 0.01 (cm) ou 0.001 (mm) se necessário -->
             <scale>0.005 0.005 0.005</scale>
           </mesh>
         </geometry>
@@ -37,19 +36,11 @@
         <always_on>1</always_on>
         <update_rate>50</update_rate>
         <visualize>false</visualize>
-        <!-- IGNITION: publica diretamente neste tópico -->
         <topic>/imu</topic>
-        <!-- GAZEBO CLASSIC (comentado; mantido sem remover) 
-        <plugin name="imu_ros" filename="libgazebo_ros_imu_sensor.so">
-          <ros><namespace>/</namespace></ros>
-          <frame_name>base_link</frame_name>
-          <topic>imu</topic>
-        </plugin>
-        -->
       </sensor>
     </link>
 
-    <!-- LiDAR no topo -->
+        <!-- LiDAR no topo
     <link name="lidar_link">
       <pose>0.8 0.0 0.8 0 0 0</pose>
       <inertial>
@@ -66,7 +57,6 @@
         <geometry><cylinder><radius>0.24</radius><length>0.24</length></cylinder></geometry>
       </collision>
 
-      <!-- Laser -->
       <sensor name="lidar" type="ray">
         <update_rate>10</update_rate>
         <ray>
@@ -75,7 +65,7 @@
               <samples>250</samples>
               <resolution>1</resolution>
               <min_angle>-2.0</min_angle>
-              <max_angle> 2.0</max_angle>
+              <max_angle>2.0</max_angle>
             </horizontal>
             <vertical>
               <samples>1</samples>
@@ -92,16 +82,7 @@
         </ray>
         <always_on>1</always_on>
         <visualize>false</visualize>
-        <!-- IGNITION: publica diretamente neste tópico -->
         <topic>/scan</topic>
-        <!-- GAZEBO CLASSIC (comentado; mantido sem remover)
-        <plugin name="lidar_ros" filename="libgazebo_ros_ray_sensor.so">
-          <ros><namespace>/</namespace></ros>
-          <frame_name>lidar_link</frame_name>
-          <output_type>sensor_msgs/LaserScan</output_type>
-          <topic>scan</topic>
-        </plugin>
-        -->
       </sensor>
     </link>
 
@@ -109,38 +90,45 @@
       <parent>base_link</parent>
       <child>lidar_link</child>
     </joint>
+    -->
 
     <!-- Câmera RGB -->
     <link name="camera">
-      <pose>1 0 0.6 0 0 0</pose>
-      <visual name="visual">
-        <geometry><box><size>0.1 0.1 0.1</size></box></geometry>
-        <material><diffuse>1 0 0 1</diffuse></material>
-      </visual>
-      <collision name="collision">
-        <geometry><box><size>0.1 0.1 0.1</size></box></geometry>
-      </collision>
+    <!-- posicione a câmera  -->
+    <pose>1 0 1 0 0 0</pose>
 
-      <sensor type="camera" name="camera_sensor">
-        <update_rate>30.0</update_rate>
-        <camera name="head">
-          <horizontal_fov>1.3962634</horizontal_fov>
-          <image><width>800</width><height>800</height><format>R8G8B8</format></image>
-          <clip><near>0.02</near><far>300</far></clip>
-        </camera>
-        <!-- IGNITION: publica diretamente neste tópico -->
-        <topic>/camera/image_raw</topic>
-        <!-- GAZEBO CLASSIC (comentado; mantido sem remover)
-        <plugin name="camera_ros" filename="libgazebo_ros_camera.so">
-          <ros><namespace>/</namespace></ros>
-          <camera_name>camera</camera_name>
-          <frame_name>camera</frame_name>
-          <image_topic_name>camera/image_raw</image_topic_name>
-          <camera_info_topic_name>camera/camera_info</camera_info_topic_name>
-        </plugin>
-        -->
-      </sensor>
-    </link>
+    <visual name="visual">
+      <geometry><box><size>0.1 0.1 0.1</size></box></geometry>
+      <material><diffuse>1 0 0 1</diffuse></material>
+    </visual>
+
+    <collision name="collision">
+      <geometry><box><size>0.1 0.1 0.1</size></box></geometry>
+    </collision>
+
+    <sensor type="camera" name="camera_sensor">
+      <!-- LIGAR-->
+      <always_on>1</always_on>
+      <update_rate>30</update_rate>
+
+      <camera name="head">
+        <horizontal_fov>1.3962634</horizontal_fov>
+        <image>
+          <width>800</width>
+          <height>800</height>
+          <format>R8G8B8</format>
+        </image>
+
+        <clip>
+          <near>0.02</near>
+          <far>300</far>
+        </clip>
+      </camera>
+
+      <topic>/camera/image_raw</topic>
+
+    </sensor>
+  </link>
 
     <joint name="camera_joint" type="fixed">
       <parent>base_link</parent>
@@ -158,7 +146,6 @@
      <pose>0 0 0 0 1.5708 1.5708</pose>
         <geometry>
           <mesh>
-            <!-- nome com espaço: usar %20 -->
             <uri>file:///home/larissa/Gemeo_digital_MJV/src/carrinho_sdf_pkg/models/carrinho_sdf/meshes/Roda_Houverboard.STL</uri>
             <scale>0.005 0.005 0.005</scale>
 
@@ -169,9 +156,6 @@
           <diffuse>0.8 0.8 0.8 1</diffuse>
           <specular>0.2 0.2 0.2 1</specular>
         </material>
-        <!-- cilindro antigo comentado mantido -->
-        <!--<geometry><cylinder><radius>0.4</radius><length>0.2</length></cylinder></geometry>
-        <material><diffuse>0 0 0 1</diffuse></material>-->
       </visual>
       <collision name="collision">
         <geometry><cylinder><radius>0.4</radius><length>0.2</length></cylinder></geometry>
@@ -226,7 +210,7 @@
       </axis>
     </joint>
 
-    <!-- Rodinha dianteira (caster com STL) -->
+    <!-- Rodinha dianteira -->
     <link name="caster">
       <pose>0.8 0 0.2 0 0 0</pose>
       <inertial>
@@ -265,7 +249,6 @@
     </joint>
 
     <!-- Diff drive -->
-    <!-- IGNITION: plugin nativo -->
     <plugin filename="libgz-sim-diff-drive-system.so" name="gz::sim::systems::DiffDrive">
       <left_joint>junta_roda_esquerda</left_joint>
       <right_joint>junta_roda_direita</right_joint>
@@ -276,21 +259,5 @@
       <odom_topic>/odom</odom_topic>
     </plugin>
 
-    <!-- GAZEBO CLASSIC (comentado; mantido sem remover)
-    <plugin filename="libgazebo_ros_diff_drive.so" name="diff_drive">
-      <ros><namespace>/</namespace></ros>
-      <left_joint>junta_roda_esquerda</left_joint>
-      <right_joint>junta_roda_direita</right_joint>
-      <wheel_separation>1.2</wheel_separation>
-      <wheel_radius>0.4</wheel_radius>
-      <max_wheel_torque>20.0</max_wheel_torque>
-      <max_wheel_acceleration>10.0</max_wheel_acceleration>
-      <odom_frame>odom</odom_frame>
-      <base_frame>base_link</base_frame>
-      <command_topic>cmd_vel</command_topic>
-      <publish_odom>true</publish_odom>
-      <publish_tf>true</publish_tf>
-    </plugin>
-    -->
   </model>
 </sdf>

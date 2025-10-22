@@ -14,4 +14,5 @@ launch/sim.launch.py
 models/carrinho_sdf/model.config
 models/carrinho_sdf/model.sdf
 resource/carrinho_sdf_pkg
+scripts/mover_carrinho.py
 worlds/meu_mundo.world
