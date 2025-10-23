@@ -45,7 +45,7 @@ def generate_launch_description():
         output='screen'
     )
 
-    bridge_camera = Node(
+    bridge_camera_image = Node(
         package='ros_gz_bridge',
         executable='parameter_bridge',
         arguments=[
@@ -92,7 +92,7 @@ def generate_launch_description():
         bridge_cmd_vel,
         bridge_odom,
         bridge_lidar,
-        bridge_camera,
+        bridge_camera_image,
         bridge_imu,
         bridge_clock,
         bridge_tf,

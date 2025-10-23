@@ -9,13 +9,13 @@ def generate_launch_description():
     world = os.path.join(pkg, 'worlds', 'meu_mundo.world')
     model = os.path.join(pkg, 'models', 'carrinho_sdf', 'model.sdf')
 
-    # Abre o Ignition (Gazebo Garden/Fortress)
+    # Abre o Ignition
     ign = ExecuteProcess(
         cmd=['ign', 'gazebo', world, '--verbose'],
         output='screen'
     )
 
-    # Spawna o modelo SDF (nome deve bater com o do SDF: carrinho_sdf)
+    # Spawna o modelo SDF
     spawn = Node(
         package='ros_gz_sim',             # Humble usa ros_gz_sim
         executable='create',
@@ -45,7 +45,7 @@ def generate_launch_description():
         output='screen'
     )
 
-    bridge_camera = Node(
+    bridge_camera_image = Node(
         package='ros_gz_bridge',
         executable='parameter_bridge',
         arguments=[
@@ -69,7 +69,7 @@ def generate_launch_description():
         output='screen'
     )
 
-    # TF do modelo — prefixo deve usar o NOME DO MODELO no SDF: carrinho_sdf
+    # TF do modelo
     bridge_tf = Node(
         package='ros_gz_bridge',
         executable='parameter_bridge',
@@ -92,7 +92,7 @@ def generate_launch_description():
         bridge_cmd_vel,
         bridge_odom,
         bridge_lidar,
-        bridge_camera,
+        bridge_camera_image,
         bridge_imu,
         bridge_clock,
         bridge_tf,

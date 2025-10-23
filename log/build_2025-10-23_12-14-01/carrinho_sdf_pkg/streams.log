@@ -1,0 +1,22 @@
+[0.991s] Invoking command in '/home/larissa/Gemeo_digital_MJV/src/carrinho_sdf_pkg': PYTHONPATH=/home/larissa/Gemeo_digital_MJV/build/carrinho_sdf_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/larissa/Gemeo_digital_MJV/install/carrinho_sdf_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/carrinho_sdf_pkg build --build-base /home/larissa/Gemeo_digital_MJV/build/carrinho_sdf_pkg/build install --record /home/larissa/Gemeo_digital_MJV/build/carrinho_sdf_pkg/install.log --single-version-externally-managed install_data
+[1.414s] running egg_info
+[1.424s] writing ../../build/carrinho_sdf_pkg/carrinho_sdf_pkg.egg-info/PKG-INFO
+[1.424s] writing dependency_links to ../../build/carrinho_sdf_pkg/carrinho_sdf_pkg.egg-info/dependency_links.txt
+[1.424s] writing entry points to ../../build/carrinho_sdf_pkg/carrinho_sdf_pkg.egg-info/entry_points.txt
+[1.424s] writing requirements to ../../build/carrinho_sdf_pkg/carrinho_sdf_pkg.egg-info/requires.txt
+[1.424s] writing top-level names to ../../build/carrinho_sdf_pkg/carrinho_sdf_pkg.egg-info/top_level.txt
+[1.426s] reading manifest file '../../build/carrinho_sdf_pkg/carrinho_sdf_pkg.egg-info/SOURCES.txt'
+[1.428s] writing manifest file '../../build/carrinho_sdf_pkg/carrinho_sdf_pkg.egg-info/SOURCES.txt'
+[1.428s] running build
+[1.428s] running build_py
+[1.430s] running install
+[1.431s] running install_lib
+[1.433s] running install_data
+[1.433s] copying models/carrinho_sdf/model.sdf -> /home/larissa/Gemeo_digital_MJV/install/carrinho_sdf_pkg/share/carrinho_sdf_pkg/models/carrinho_sdf
+[1.433s] running install_egg_info
+[1.435s] removing '/home/larissa/Gemeo_digital_MJV/install/carrinho_sdf_pkg/lib/python3.10/site-packages/carrinho_sdf_pkg-0.0.1-py3.10.egg-info' (and everything under it)
+[1.441s] Copying ../../build/carrinho_sdf_pkg/carrinho_sdf_pkg.egg-info to /home/larissa/Gemeo_digital_MJV/install/carrinho_sdf_pkg/lib/python3.10/site-packages/carrinho_sdf_pkg-0.0.1-py3.10.egg-info
+[1.447s] running install_scripts
+[1.485s] Installing mover_carrinho script to /home/larissa/Gemeo_digital_MJV/install/carrinho_sdf_pkg/lib/carrinho_sdf_pkg
+[1.486s] writing list of installed files to '/home/larissa/Gemeo_digital_MJV/build/carrinho_sdf_pkg/install.log'
+[1.540s] Invoked command in '/home/larissa/Gemeo_digital_MJV/src/carrinho_sdf_pkg' returned '0': PYTHONPATH=/home/larissa/Gemeo_digital_MJV/build/carrinho_sdf_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/larissa/Gemeo_digital_MJV/install/carrinho_sdf_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/carrinho_sdf_pkg build --build-base /home/larissa/Gemeo_digital_MJV/build/carrinho_sdf_pkg/build install --record /home/larissa/Gemeo_digital_MJV/build/carrinho_sdf_pkg/install.log --single-version-externally-managed install_data
